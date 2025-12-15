@@ -100,7 +100,7 @@ async def submit_form(
     uploads.mkdir(parents=True, exist_ok=True)
     results.mkdir(parents=True, exist_ok=True)
 
-    def save_up(f: UploadFile | None, name: str):
+    async def save_up(f: UploadFile | None, name: str):
         if not f or not f.filename:
             return None
         out = uploads / name
