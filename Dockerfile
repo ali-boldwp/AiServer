@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # ---- Copy requirements ----
-COPY requirements.txt /app/
+#COPY requirements.txt /app/
 
 # ---- Install Python deps ----
 RUN pip install fastapi uvicorn python-multipart pydantic python-dotenv
