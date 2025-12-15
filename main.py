@@ -193,7 +193,7 @@ def download_preview(job_id: str):
 # -----------------------
 @app.get("/api/next_job")
 def api_next_job(x_api_key: str | None = Header(default=None)):
-    require_key(x_api_key)
+    # require_key(x_api_key)
 
     # find oldest queued job
     jobs = sorted([p for p in DATA_DIR.iterdir() if p.is_dir()])
