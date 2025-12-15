@@ -107,9 +107,9 @@ async def submit_form(
         out.write_bytes(await f.read())
         return str(out.name)
 
-    face_name = save_up(face, "face.png")
-    logo_name = save_up(logo, "logo.png")
-    ref_name  = save_up(ref_img, "ref.jpg")
+    face_name = await save_up(face, "face.png")
+    logo_name = await save_up(logo, "logo.png")
+    ref_name  = await save_up(ref_img, "ref.jpg")
 
     job = {
         "job_id": job_id,
