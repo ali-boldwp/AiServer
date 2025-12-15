@@ -1,0 +1,99 @@
+{
+  "niches": {
+    "ai_tech": {
+      "keywords": ["ai", "automation", "chatgpt", "tools", "tech"],
+      "visual_cues": ["futuristic UI", "neon circuitry", "holographic panels", "robot/automation vibe"],
+      "color_themes": ["neon_blue", "purple_cyber", "clean_white"]
+    },
+    "finance_money": {
+      "keywords": ["money", "earn", "income", "business", "profit"],
+      "visual_cues": ["profit chart", "dollar icons", "cash glow", "finance dashboard"],
+      "color_themes": ["gold_lux", "green_money", "red_black"]
+    },
+    "fitness": {
+      "keywords": ["workout", "fat loss", "gym", "muscle"],
+      "visual_cues": ["gym lighting", "high energy", "sports vibes", "before after"],
+      "color_themes": ["red_black", "orange_energy", "clean_white"]
+    },
+    "gaming": {
+      "keywords": ["game", "rank", "fps", "mobile", "pc"],
+      "visual_cues": ["neon gamer lighting", "HUD overlay", "action motion blur"],
+      "color_themes": ["neon_blue", "purple_cyber", "red_black"]
+    },
+    "education": {
+      "keywords": ["tutorial", "learn", "course", "how to"],
+      "visual_cues": ["clean minimal", "diagram vibe", "whiteboard feel"],
+      "color_themes": ["clean_white", "blue_brand", "yellow_pop"]
+    },
+    "real_estate": {
+      "keywords": ["property", "house", "real estate", "rent"],
+      "visual_cues": ["house silhouette", "modern interior blur", "location map pin"],
+      "color_themes": ["clean_white", "blue_brand", "gold_lux"]
+    }
+  },
+
+  "archetypes": {
+    "AUTO": {"description": "Let the system choose archetype automatically."},
+
+    "face_big_text": {
+      "requires_face": true,
+      "layout": "face_left_text_right",
+      "prompt_mode": "background_only",
+      "description": "Face + big text = highest CTR pattern for most niches."
+    },
+
+    "before_after": {
+      "requires_face": false,
+      "layout": "split_before_after",
+      "prompt_mode": "background_only",
+      "description": "Before/After split style."
+    },
+
+    "vs_comparison": {
+      "requires_face": false,
+      "layout": "vs_split",
+      "prompt_mode": "background_only",
+      "description": "VS split comparison."
+    },
+
+    "product_showcase": {
+      "requires_face": false,
+      "layout": "product_big_text",
+      "prompt_mode": "background_only",
+      "description": "Product big, text strong, optional small face."
+    }
+  },
+
+  "emotions": {
+    "AUTO": {"prompt": "engaging expression, high energy"},
+    "excited": {"prompt": "excited, energetic, hype"},
+    "shocked": {"prompt": "shocked, mind blown, dramatic"},
+    "serious": {"prompt": "serious, confident, intense"},
+    "curious": {"prompt": "curious, intrigued, suspenseful"},
+    "angry": {"prompt": "angry, intense reaction"}
+  },
+
+  "styles": {
+    "photoreal": {"prompt": "photorealistic, sharp, realistic lighting, natural textures"},
+    "bold": {"prompt": "bold, high contrast, vibrant colors, thumbnail ready"},
+    "slightly_stylized": {"prompt": "clean semi-realistic, polished, not cartoon, not anime"}
+  },
+
+  "color_themes": {
+    "neon_blue": {"prompt": "neon blue and cyan glow"},
+    "purple_cyber": {"prompt": "purple cyberpunk glow"},
+    "gold_lux": {"prompt": "gold luxury highlights"},
+    "green_money": {"prompt": "green money theme"},
+    "red_black": {"prompt": "red and black high contrast"},
+    "clean_white": {"prompt": "clean white minimal background"},
+    "blue_brand": {"prompt": "blue brand theme"},
+    "yellow_pop": {"prompt": "yellow pop highlights"}
+  },
+
+  "layouts": {
+    "face_left_text_right": {"type": "composite_face_text"},
+    "split_before_after": {"type": "split_template"},
+    "vs_split": {"type": "split_template"},
+    "product_big_text": {"type": "product_template"}
+  }
+}
