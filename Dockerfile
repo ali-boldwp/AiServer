@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt /app/
 
 # ---- Install Python deps ----
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install fastapi uvicorn python-multipart pydantic python-dotenv
 
 # ---- Copy full project ----
 COPY . /app
